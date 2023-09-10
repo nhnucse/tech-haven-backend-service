@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "node-express-project-boilerplate",
   "main": "index.js",
+  "repository": "git@github.com:Nahidjc/express-project-boilerplate.git",
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
