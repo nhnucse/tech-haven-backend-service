@@ -2,8 +2,6 @@
 
 A boilerplate project for kickstarting Node.js applications using the Express.js framework with MongoDB and Mongoose, complete with ESLint for code quality.
 
-![Project Logo/Icon (if applicable)](project_logo.png)
-
 ## Table of Contents
 
 - [Features](#features)
