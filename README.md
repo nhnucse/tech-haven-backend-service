@@ -33,13 +33,11 @@ Follow these steps to get your development environment set up and running.
 ### Installation
 
 1. Clone the repository:
-
    ```shell
    git clone https://github.com/nahidjc/express-project-boilerplate.git
   cd your-boilerplate-repo
   npm install
 # Example .env file
-
 PORT=3000
 MONGODB_URI=mongodb://localhost/your-database-name
 
