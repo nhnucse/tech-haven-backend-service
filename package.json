@@ -1,6 +1,6 @@
 {
   "name": "express-project-starter-nahidjc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node-express-project-boilerplate",
   "main": "index.js",
   "scripts": {
