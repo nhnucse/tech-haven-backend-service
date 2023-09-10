@@ -19,7 +19,6 @@ A boilerplate project for kickstarting Node.js applications using the Express.js
 - MongoDB and Mongoose integration for database operations.
 - ESLint configuration for code quality.
 - Easy-to-customize project structure.
-- [Add your project features here]
 
 ## Getting Started
 
