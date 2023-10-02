@@ -52,6 +52,12 @@ const subscriptionSchema = new Schema({
     default: 'active',
     required: true,
   },
+  subStatus: {
+    type: String,
+    enum: ['subscription', 'recurring', 'suspended'],
+    default: 'subscription',
+    required: true,
+  },
 });
 
 // Create a model for the Subscription
