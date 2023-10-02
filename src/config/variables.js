@@ -1,10 +1,4 @@
 /* eslint-disable no-undef */
- const DB_URL = process.env.MONGODB_URL;
- const NODE_ENV = process.env.NODE_ENV;
- const PORT = process.env.PORT;
-module.exports = {
-  NODE_ENV,
-  DB_URL,
-  PORT
-};
-
+export const DB_URL = process.env.MONGODB_URL;
+export const NODE_ENV = process.env.NODE_ENV;
+export const PORT = process.env.PORT;

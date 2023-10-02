@@ -1,6 +1,7 @@
 {
   "name": "express-project-starter-nahidjc",
   "version": "1.0.1",
+  "type": "module",
   "description": "node-express-project-boilerplate",
   "main": "index.js",
   "repository": "git@github.com:Nahidjc/express-project-boilerplate.git",
