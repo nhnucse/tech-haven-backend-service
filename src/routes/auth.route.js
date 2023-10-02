@@ -1,9 +1,8 @@
-/* eslint-disable no-undef */
-const express = require('express');
-const { authController } = require('../controllers');
+import { Router } from 'express';
+import { signup } from '../controllers/auth.controller.js';
 
-const router = express.Router();
+const router = Router();
 
-router.post('/signup', authController.signup);
+router.post('/signup', signup);
 
-module.exports = router;
+export default router;
