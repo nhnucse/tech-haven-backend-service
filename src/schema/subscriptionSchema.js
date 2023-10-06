@@ -1,12 +1,18 @@
 import { Schema , model } from 'mongoose';
+const { v4: uuidv4 } = require('uuid');
 const subscriptionSchema = new Schema({
+  subscriptionId: {
+    type: String,
+    default: uuidv4,
+    unique: true,
+  },
   shopId: {
-    type: Schema.Types.ObjectId,
+    type: String,
     ref: 'ShopAccount',
     required: true,
   },
   planId: {
-    type: Schema.Types.ObjectId,
+    type: String,
     ref: 'PricingPlan',
     required: true,
   },
