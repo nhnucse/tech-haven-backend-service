@@ -1,7 +1,12 @@
 import { Schema , model } from 'mongoose';
-
+const { v4: uuidv4 } = require('uuid');
 // Create a schema for the shopAccount
 const shopAccountSchema = new Schema({
+  shopId: {
+    type: String,
+    default: uuidv4,
+    unique: true,
+  },
   shopName: {
     type: String,
     required: true,
