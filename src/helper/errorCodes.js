@@ -59,10 +59,6 @@ export const errorCodes = {
     reason: "ValidationError",
     message: "Account is inactive."
   },
-  400100: {
-    reason: "KYCInitiateRequestError",
-    message: "KYC Exception"
-  },
   400101: {
     reason: "ValidationError",
     message: "Invalid invoice status for payment"
