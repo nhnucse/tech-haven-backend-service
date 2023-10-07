@@ -49,7 +49,6 @@ const shopAccountSchema = new Schema({
   ownerNID: {
     type: String,
     required: true,
-    unique: true,
   },
 });
 
