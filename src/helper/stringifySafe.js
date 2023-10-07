@@ -1,7 +1,5 @@
-"use strict";
+import * as util from 'util';
 
-const util = require("util");
-
-module.exports = (obj, replacer = null, space = 0) => {
+export const stringifySafe = (obj, replacer = null, space = 0) => {
   return JSON.stringify(util.inspect(obj), replacer, space);
 };

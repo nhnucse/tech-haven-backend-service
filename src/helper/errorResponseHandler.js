@@ -1,5 +1,6 @@
-const stringifySafe = require("./stringifySafe");
-const errorCodes = require("./errorCodes");
+// const stringifySafe = require("./stringifySafe");
+import { stringifySafe } from './stringifySafe.js';
+import { errorCodes } from './errorCodes.js';
 
 function getErrData(err) {
   if (err) {
@@ -39,7 +40,7 @@ function getErrError(err) {
   return {};
 }
 
-const errorResponseHandler = (err, req, res, next) => {
+export const errorResponseHandler = (err, req, res, next) => {
   const {
     status,
     title = null,
@@ -147,5 +148,3 @@ const errorResponseHandler = (err, req, res, next) => {
       );
   }
 };
-
-module.exports = errorResponseHandler;
