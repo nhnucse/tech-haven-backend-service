@@ -1,23 +1,15 @@
 import Validator from 'validatorjs';
+import { statusCodes } from './../helper/statusCodes.js';
 
-export function validate(data, rules, messages ) {
-  let validation = new Validator(data, rules);
+export const validate = (data, rules) => {
+  const validation = new Validator(data, rules);
   if (validation.fails()) {
-    const errors = {
-      status: 400,
-      data: {
-        errors: {
-          "invalid-params": validation.errors.all()
-        }
-      },
-      error: {
-        code: 40001,
-        data: {
-          "invalid-params": validation.errors.all()
-        }
-      }
+    throw {
+      status: statusCodes.BAD_REQUEST,
+      message: `Invalid Parameter(s): ${Object.keys(
+        validation.errors.all()
+      ).join(", ")}`,
+      data: validation.errors.all()
     };
-    throw errors;
   }
-  return true;
-}
+};
