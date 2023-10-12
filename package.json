@@ -1,8 +1,8 @@
 {
-  "name": "express-project-starter-nahidjc",
+  "name": "tech-haven-backend-service",
   "version": "1.0.1",
   "type": "module",
-  "description": "node-express-project-boilerplate",
+  "description": "tech-haven-backend-service",
   "main": "index.js",
   "repository": "git@github.com:Nahidjc/express-project-boilerplate.git",
   "scripts": {
