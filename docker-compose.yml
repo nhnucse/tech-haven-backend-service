@@ -1,0 +1,11 @@
+version: '3.7'
+services: 
+  nahidjc: 
+    build: .
+    expose:
+      - '8088'
+    ports:
+      - '8088:8088'
+    volumes:
+      - ./usr/src/app:/app
+    command: npm run dev
